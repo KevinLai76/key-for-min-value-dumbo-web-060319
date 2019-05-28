@@ -5,12 +5,15 @@ def key_for_min_value(name_hash)
   if name_hash === {}
     return nil
   end
-  
+  name = ""
   min = 0
-  value = name_hash.collect{ |k,v| v}
-  value.each_with_index do |num, i|
-    if num[i] < num[i + 1]
-      min += num
+  name_hash.each do |k,v|
+    if min === 0
+      min === v
+      name === k
+    elsif v < min
+      v === min            
+      name 
     end
   end 
 end
