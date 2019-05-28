@@ -13,7 +13,9 @@ def key_for_min_value(name_hash)
       name === k
     elsif v < min
       v === min            
-      name 
+      name === k
     end
   end 
+  
+  return name
 end
