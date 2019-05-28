@@ -8,12 +8,12 @@ def key_for_min_value(name_hash)
   name = nil
   min = nil
   name_hash.each do |k,v|
-    if min == nil || v < min
+    if min == nil
       min = v
       name = k
-    # elsif v < min
-    #   v = min            
-    #   name = k
+    elsif v < min
+      v = min            
+      name = k
     end
   end 
   
